@@ -1,0 +1,22 @@
+import platform
+
+
+
+ms1 = "ms1 » "
+
+print("------ Operating System Specs ------")
+print("Operating System » " + str(platform.system))
+print("OS Release » " + str(platform.release()))
+print("Processor » " + str(platform.processor()))
+print("Architecture » " + str(platform.architecture()))
+print("OS Version » " + str(platform.version()))
+print("Node » " + str(platform.node()))
+print("U-Name » " + str(platform.uname()))
+print("-------------------------------------")
+print(ms1 + "Note » You can inject this module into other computers and run it via shell")
+
+
+   
+                
+
+            
