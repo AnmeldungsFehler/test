@@ -1,18 +1,9 @@
-import os
-
 import platform
-import minisploit2
 
 
 
 ms1 = "ms1 » "
 
-def process_command(command):
-
-    parts = command.split(' ')
-    useorset = parts[0]
-    
-    if useorset == 'run':
         print("------ Operating System Specs ------")
         print("Operating System » " + str(platform.system))
         print("OS Release » " + str(platform.release()))
@@ -28,20 +19,4 @@ def process_command(command):
    
                 
 
-    else:
-        print(ms1 + 'Unknown Command')
-
-def main():
-    while True:
-        command = input(ms1 + "/modules/auxiliary/get_os_info » ")
-        if command.lower() == 'exit':
-            break
-        elif command.lower() == 'back':
-            minisploit2.main() 
-        process_command(command)
             
-
-
-
-if __name__ == "__main__":
-    main()
